@@ -85,7 +85,7 @@ body{
   box-sizing: border-box;
 }
 header{
-  height: 40px;
+  height: 5%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -93,8 +93,7 @@ header{
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-    --tw-bg-opacity: 1;
-    background-color: rgb(30 64 175 / var(--tw-bg-opacity, 1)) 
+  
 }
 header nav{
   height: 100%;
@@ -105,12 +104,84 @@ header nav{
 }
 header nav ul{
   height: 100%;
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 header nav ul li{
   list-style: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+main{
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+main .titre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  
+}
+main .contenner{
+  height: 100%;
+  display: flex;
+  
+}
+
+main .contenner .right{
+  
+width: 100%;
+ height: 100%;
+ background-image: url("pexels-serpstat-177219-572056.jpg");
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ object-fit: cover;
+}
+main .dessus{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  gap: 350px;
+  font-size: 2.5em;
+  background-color: rgba(46, 45, 45, 0.7);
+
+}
+main .dessus .text{
+  font-size: 25px;
   color: white;
+}
+main .dessus .boutonStart{
+  display: flex;
+  gap: 20px;
+}
+main .dessus .boutonStart button{
+  padding: 10px 25px ;
+  color: white;
+  font-size: 15px;
+}
+main .dessus .boutonStart button.start{
+  --tw-bg-opacity: 1;
+    background-color: rgb(37 99 235 / var(--tw-bg-opacity, 1));
+  border: none;
+  border-radius: 5px;
+}
+main .dessus .boutonStart button.not{
+  --tw-bg-opacity: 1;
+  background: none;
+  border: 1px solid rgb(37 99 235 / var(--tw-bg-opacity, 1));
+ border-radius: 5px;
+  
 }
